@@ -1,11 +1,11 @@
 -----
 
-## name: plan-review
+## name: plan-proof
 description: Review a project plan, decision doc, spec, RFC, design proposal, or roadmap before committing to it, and return one short, scannable verdict. Apply this whenever the user shares or points to a plan or proposal and asks whether it is sound, what is missing, what could go wrong, whether the approach is right, or whether to proceed — and on phrasings like “review this plan”, “poke holes in this”, “sanity-check this”, “what am I missing”, “is this a good plan”, or “should we do this”. Use it even when the user does not say the word “review”, as long as they are weighing a plan or about to act on one. It runs five reviewer lenses (right problem, tradeoff, blast radius, measurable success, the call) and consolidates them into a single verdict. It does not assign a numeric score or rewrite the plan.
 
-# Plan Review
+# PlanProof
 
-Read a plan and hand back the shortest review that lets the reader decide whether to proceed. Lead with the one line that survives skimming, then give one sharp finding per lens — never a list of every possible risk. A clean plan should get a short “proceed”, not manufactured problems.
+Read a plan and hand back the shortest review that lets the reader decide whether to proceed. (This is PlanProof’s **review pass** — it does not score or rewrite the plan; see Scope.) Lead with the one line that survives skimming, then give one sharp finding per lens — never a list of every possible risk. A clean plan should get a short “proceed”, not manufactured problems.
 
 The plan may be pasted into the message or provided as a file or path. Read it fully before reviewing.
 
@@ -47,9 +47,9 @@ Use this shape. Drop any line that does not apply; never pad.
 
 ## Scope of this skill
 
-This is the **review** pass only. It does not assign a numeric completeness score (that is a separate rubric) and it does not rewrite or auto-improve the plan (that is a separate loop). It tells the reader where the plan stands; the reader decides.
+This is PlanProof’s **review** pass only. It does not assign a numeric completeness score (PlanProof’s rubric — planned) and it does not rewrite or auto-improve the plan (PlanProof’s improvement loop — planned). It tells the reader where the plan stands; the reader decides.
 
-In the full product the five lenses are sourced read-only from the Giant Brains Claude Skills toolkit. Here their questions are summarized inline so the review runs standalone.
+In the full PlanProof product, the five lenses are sourced read-only from the Giant Brains Claude Skills toolkit. Here their questions are summarized inline so the review runs standalone.
 
 ## Examples
 
